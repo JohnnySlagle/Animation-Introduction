@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B279692415A7838100AB46AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B279692315A7838100AB46AD /* UIKit.framework */; };
+		B279692615A7838100AB46AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B279692515A7838100AB46AD /* Foundation.framework */; };
+		B279692815A7838100AB46AD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B279692715A7838100AB46AD /* CoreGraphics.framework */; };
+		B279692E15A7838100AB46AD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B279692C15A7838100AB46AD /* InfoPlist.strings */; };
+		B279693015A7838100AB46AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B279692F15A7838100AB46AD /* main.m */; };
+		B279693415A7838100AB46AD /* JSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B279693315A7838100AB46AD /* JSAppDelegate.m */; };
+		B279693715A7838100AB46AD /* JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B279693615A7838100AB46AD /* JSViewController.m */; };
+		B279693A15A7838100AB46AD /* JSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B279693815A7838100AB46AD /* JSViewController.xib */; };
+		B279694115A7842600AB46AD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B279694015A7842600AB46AD /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B279691F15A7838100AB46AD /* AnimationIntroduction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationIntroduction.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B279692315A7838100AB46AD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B279692515A7838100AB46AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B279692715A7838100AB46AD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B279692B15A7838100AB46AD /* AnimationIntroduction-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AnimationIntroduction-Info.plist"; sourceTree = "<group>"; };
+		B279692D15A7838100AB46AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B279692F15A7838100AB46AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B279693115A7838100AB46AD /* AnimationIntroduction-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AnimationIntroduction-Prefix.pch"; sourceTree = "<group>"; };
+		B279693215A7838100AB46AD /* JSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSAppDelegate.h; sourceTree = "<group>"; };
+		B279693315A7838100AB46AD /* JSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSAppDelegate.m; sourceTree = "<group>"; };
+		B279693515A7838100AB46AD /* JSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSViewController.h; sourceTree = "<group>"; };
+		B279693615A7838100AB46AD /* JSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSViewController.m; sourceTree = "<group>"; };
+		B279693915A7838100AB46AD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/JSViewController.xib; sourceTree = "<group>"; };
+		B279694015A7842600AB46AD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B279691C15A7838100AB46AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B279694115A7842600AB46AD /* QuartzCore.framework in Frameworks */,
+				B279692415A7838100AB46AD /* UIKit.framework in Frameworks */,
+				B279692615A7838100AB46AD /* Foundation.framework in Frameworks */,
+				B279692815A7838100AB46AD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B279691415A7838100AB46AD = {
+			isa = PBXGroup;
+			children = (
+				B279692915A7838100AB46AD /* AnimationIntroduction */,
+				B279692215A7838100AB46AD /* Frameworks */,
+				B279692015A7838100AB46AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B279692015A7838100AB46AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B279691F15A7838100AB46AD /* AnimationIntroduction.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B279692215A7838100AB46AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B279694015A7842600AB46AD /* QuartzCore.framework */,
+				B279692315A7838100AB46AD /* UIKit.framework */,
+				B279692515A7838100AB46AD /* Foundation.framework */,
+				B279692715A7838100AB46AD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B279692915A7838100AB46AD /* AnimationIntroduction */ = {
+			isa = PBXGroup;
+			children = (
+				B279693215A7838100AB46AD /* JSAppDelegate.h */,
+				B279693315A7838100AB46AD /* JSAppDelegate.m */,
+				B279693515A7838100AB46AD /* JSViewController.h */,
+				B279693615A7838100AB46AD /* JSViewController.m */,
+				B279693815A7838100AB46AD /* JSViewController.xib */,
+				B279692A15A7838100AB46AD /* Supporting Files */,
+			);
+			path = AnimationIntroduction;
+			sourceTree = "<group>";
+		};
+		B279692A15A7838100AB46AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B279692B15A7838100AB46AD /* AnimationIntroduction-Info.plist */,
+				B279692C15A7838100AB46AD /* InfoPlist.strings */,
+				B279692F15A7838100AB46AD /* main.m */,
+				B279693115A7838100AB46AD /* AnimationIntroduction-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B279691E15A7838100AB46AD /* AnimationIntroduction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B279693D15A7838100AB46AD /* Build configuration list for PBXNativeTarget "AnimationIntroduction" */;
+			buildPhases = (
+				B279691B15A7838100AB46AD /* Sources */,
+				B279691C15A7838100AB46AD /* Frameworks */,
+				B279691D15A7838100AB46AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnimationIntroduction;
+			productName = AnimationIntroduction;
+			productReference = B279691F15A7838100AB46AD /* AnimationIntroduction.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B279691615A7838100AB46AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JS;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = B279691915A7838100AB46AD /* Build configuration list for PBXProject "AnimationIntroduction" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B279691415A7838100AB46AD;
+			productRefGroup = B279692015A7838100AB46AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B279691E15A7838100AB46AD /* AnimationIntroduction */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B279691D15A7838100AB46AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B279692E15A7838100AB46AD /* InfoPlist.strings in Resources */,
+				B279693A15A7838100AB46AD /* JSViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B279691B15A7838100AB46AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B279693015A7838100AB46AD /* main.m in Sources */,
+				B279693415A7838100AB46AD /* JSAppDelegate.m in Sources */,
+				B279693715A7838100AB46AD /* JSViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B279692C15A7838100AB46AD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B279692D15A7838100AB46AD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B279693815A7838100AB46AD /* JSViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B279693915A7838100AB46AD /* en */,
+			);
+			name = JSViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B279693B15A7838100AB46AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B279693C15A7838100AB46AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B279693E15A7838100AB46AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AnimationIntroduction/AnimationIntroduction-Prefix.pch";
+				INFOPLIST_FILE = "AnimationIntroduction/AnimationIntroduction-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B279693F15A7838100AB46AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AnimationIntroduction/AnimationIntroduction-Prefix.pch";
+				INFOPLIST_FILE = "AnimationIntroduction/AnimationIntroduction-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B279691915A7838100AB46AD /* Build configuration list for PBXProject "AnimationIntroduction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B279693B15A7838100AB46AD /* Debug */,
+				B279693C15A7838100AB46AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B279693D15A7838100AB46AD /* Build configuration list for PBXNativeTarget "AnimationIntroduction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B279693E15A7838100AB46AD /* Debug */,
+				B279693F15A7838100AB46AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B279691615A7838100AB46AD /* Project object */;
+}
