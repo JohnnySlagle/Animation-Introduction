@@ -2,8 +2,8 @@
 //  JSViewController.m
 //  AnimationIntroduction
 //
-//  Created by Johnny Slagle on 6/29/12.
-//  Copyright (c) Johnny Slagle. All rights reserved.
+//  Updated by Johnny Slagle on 11/1/12.
+//  Copyright (c) 2012 Johnny Slagle. All rights reserved.
 //
 
 #import <QuartzCore/QuartzCore.h>

@@ -2,7 +2,7 @@
 //  JSAppDelegate.m
 //  AnimationIntroduction
 //
-//  Created by Johnny Slagle on 7/6/12.
+//  Updated by Johnny Slagle on 11/1/12.
 //  Copyright (c) 2012 Johnny Slagle. All rights reserved.
 //
 
