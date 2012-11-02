@@ -14,7 +14,6 @@
 		B279693015A7838100AB46AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B279692F15A7838100AB46AD /* main.m */; };
 		B279693415A7838100AB46AD /* JSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B279693315A7838100AB46AD /* JSAppDelegate.m */; };
 		B279693715A7838100AB46AD /* JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B279693615A7838100AB46AD /* JSViewController.m */; };
-		B279693A15A7838100AB46AD /* JSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B279693815A7838100AB46AD /* JSViewController.xib */; };
 		B279694115A7842600AB46AD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B279694015A7842600AB46AD /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +30,6 @@
 		B279693315A7838100AB46AD /* JSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSAppDelegate.m; sourceTree = "<group>"; };
 		B279693515A7838100AB46AD /* JSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSViewController.h; sourceTree = "<group>"; };
 		B279693615A7838100AB46AD /* JSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSViewController.m; sourceTree = "<group>"; };
-		B279693915A7838100AB46AD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/JSViewController.xib; sourceTree = "<group>"; };
 		B279694015A7842600AB46AD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -85,7 +83,6 @@
 				B279693315A7838100AB46AD /* JSAppDelegate.m */,
 				B279693515A7838100AB46AD /* JSViewController.h */,
 				B279693615A7838100AB46AD /* JSViewController.m */,
-				B279693815A7838100AB46AD /* JSViewController.xib */,
 				B279692A15A7838100AB46AD /* Supporting Files */,
 			);
 			path = AnimationIntroduction;
@@ -154,7 +151,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B279692E15A7838100AB46AD /* InfoPlist.strings in Resources */,
-				B279693A15A7838100AB46AD /* JSViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,14 +176,6 @@
 				B279692D15A7838100AB46AD /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		B279693815A7838100AB46AD /* JSViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B279693915A7838100AB46AD /* en */,
-			);
-			name = JSViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -279,6 +267,7 @@
 				B279693F15A7838100AB46AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

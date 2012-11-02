@@ -10,26 +10,31 @@
 
 #import "JSViewController.h"
 
+/*
+ *  Simple macro to convert between RGB values to a UIColor.
+ */
 #define UIColorFromRGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
 
+/*
+ *  Button Strings
+ */
 #define BarButtonNormalTransitionString @"Normal Transitions"
 #define BarButtonRandomTransitionString @"Random Transitions"
 
-// Change this if you just want the animation to flip from left to right
-#define JSRandomTransitions TRUE   
-
 @interface JSViewController ()
+
+@property (nonatomic, strong) UIView * frontView;
+@property (nonatomic, strong) UIView * backView;
+@property (nonatomic, strong) UIView * containerView;
+@property (nonatomic, assign) BOOL displayingFront;
+@property (nonatomic, assign) BOOL randomTransition;
 
 @end
 
 @implementation JSViewController
-{
-    UIView * frontView;
-    UIView * backView;
-    UIView * containerView;
-    BOOL displayingFront;
-    BOOL randomTransition;
-}
+
+@synthesize frontView, backView, containerView;
+@synthesize randomTransition, displayingFront;
 
 #pragma mark -
 #pragma mark View Lifespan
@@ -39,6 +44,23 @@
     
     // ViewController's BG color
     self.view.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
+    
+    // Instruction Label
+    UILabel *instructionLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0, 0.0, 150.0, 25.0f)];
+    instructionLabel.center = CGPointMake(self.view.center.x, (self.view.frame.size.height*6)/7);
+    
+    instructionLabel.backgroundColor = [UIColor lightGrayColor];
+    
+    instructionLabel.text = @"Tap to Animate";
+    instructionLabel.textColor = [UIColor whiteColor];
+    instructionLabel.textAlignment = NSTextAlignmentCenter;
+    
+    instructionLabel.shadowColor = [UIColor blackColor];
+    instructionLabel.shadowOffset = CGSizeMake(0.0, 1.0);
+
+    instructionLabel.layer.cornerRadius = 12.5;
+    
+    [self.view addSubview:instructionLabel];
     
     // Set transition boolean default
     randomTransition = NO;
@@ -141,6 +163,17 @@
     [self fadeInView:containerView];
 }
 
+- (void)viewDidUnload
+{
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return YES;
+}
+
 #pragma mark -
 #pragma mark Button Selector
 - (void) switchTransitionStyle
@@ -212,33 +245,29 @@
 
 #pragma mark - 
 #pragma mark Flip Between Views
-
 - (void) flipBetweenViews
 {
-    // Note: There might be mirror issues when using views with actual content
-    
+    // Note: There might be mirror issues you would need to resolve when using views with actual content
     if(randomTransition)
     {
         /* Random Transition */
         if (!displayingFront)
-            [UIView transitionFromView:backView toView:frontView duration:1.0 options:[self randomOption] completion:NULL];
+            [UIView transitionFromView:backView toView:frontView duration:1.0 options:[self randomAnimationOption] completion:NULL];
         else
-            [UIView transitionFromView:frontView toView:backView duration:1.0 options:[self randomOption] completion:NULL];
-    }   
-    else
-    {    
+            [UIView transitionFromView:frontView toView:backView duration:1.0 options:[self randomAnimationOption] completion:NULL];
+    } else {    
         /* this only flips left then right */
-        if (!displayingFront)
+        if (!displayingFront) {
             [UIView transitionFromView:backView toView:frontView duration:1.0 options:UIViewAnimationOptionTransitionFlipFromLeft completion:NULL];
-        
-        else
+        } else {
             [UIView transitionFromView:frontView toView:backView duration:1.0 options:UIViewAnimationOptionTransitionFlipFromRight completion:NULL];
+        }
     }
     
     displayingFront = !displayingFront;
 }
 
-- (UIViewAnimationOptions) randomOption
+- (UIViewAnimationOptions) randomAnimationOption
 {
     switch (arc4random()%4) {
         case 0:
@@ -252,19 +281,9 @@
             break;
         default:
             return UIViewAnimationOptionTransitionFlipFromBottom;
-            break;                        
+            break;
     }     
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return YES;
-}
 
 @end
